@@ -1,10 +1,10 @@
 var list = {
-    value : 1,
+    value: 1,
     rest: {
-        value : 2,
-        rest : {
-            value : 3,
-            rest : null
+        value: 2,
+        rest: {
+            value: 3,
+            rest: null
         }
     }
 }
@@ -16,13 +16,14 @@ console.log(list);
 document.getElementById('output').innerHTML = jsonStr;
 
 
-function arrayToList(){
+function arrayToList() {
+
     var myObjList = {
-        value : 2,
-        rest : null
+        value: 2,
+        rest: null
     }
-    
-    
+
+
     myObjList.push()
-    
+
 }
