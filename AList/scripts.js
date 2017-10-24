@@ -1,29 +1,11 @@
-var list = {
-    value: 1,
-    rest: {
-        value: 2,
-        rest: {
-            value: 3,
-            rest: null
-        }
+var myList = [1, 2, 3, 4]
+
+
+function arrayToList(array) {
+    var list = null;
+    for (var i = array.length - 1; i >= 0; i--) {
+        list = { value: array[i], rest: list };
     }
-}
-
-var jsonStr = JSON.stringify(list);
-
-console.log(list);
-
-document.getElementById('output').innerHTML = jsonStr;
-
-
-function arrayToList() {
-
-    var myObjList = {
-        value: 2,
-        rest: null
-    }
-
-
-    myObjList.push()
-
+    console.log(JSON.stringify(list));
+    return list;
 }
