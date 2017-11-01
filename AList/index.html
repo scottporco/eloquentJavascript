@@ -1,22 +1,42 @@
 <!DOCTYPE html>
 <html lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>A List</title>
-        <meta name="author" content="Scott Porco">
-        <link type="text/css" href="simple-grid.min.css" rel="stylesheet">
 
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A List</title>
+    <meta name="author" content="Scott Porco">
+    <link type="text/css" href="simple-grid.min.css" rel="stylesheet">
 
-    <body>
+</head>
 
-        <h1>A List</h1>
+<body class="container">
 
-        <pre id="output"></pre>
+    <h1>A List</h1>
 
-        <script src="scripts.js" type="application/javascript"></script>
+    <pre> var y = [1, 2, 3] </pre>
+
+    <hr>
+    <h3>arrayToList(y)</h3>
+    <p id="output1"> </p>
 
 
-    </body>
+    <hr>
+    <h3>listToArray(arrayToList(y))</h3>
+    <p id="output2"> </p>
+
+    <hr>
+    <h3>prepend(10, prepend(20, null))</h3>
+    <p id="output3"></p>
+
+    <hr>
+    <h3> nth(arrayToList([10, 20, 30]), 1) </h3>
+    <p id="output4"></p>
+
+
+    <script src="scripts.js" type="application/javascript"></script>
+
+
+</body>
+
 </html>
